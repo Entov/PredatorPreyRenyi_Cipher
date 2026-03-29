@@ -1,4 +1,4 @@
-#PredatorPrey Encryption and Decryption
+## PredatorPrey Encryption and Decryption
 This repository contains a lightweight predator-prey based multimedia encryption program that operates on **raw binary data**. Since the program reads files as binary streams, it can be used with **any file type**.
 ## Programs
 
