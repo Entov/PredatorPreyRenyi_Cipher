@@ -25,20 +25,22 @@ Open a terminal (or Command Prompt), move to the directory where the program is 
 
 ```bash
 EPredatorPreyTI.exe input_filename.extension
-
+```
 Example:
+```bash
 EPredatorPreyTI.exe barbara_binaria.pgm
+```
 
 ### Decryption
 
 If the decryption program, the encrypted .bin file and the .txt key are in the same directory, run:
-
+```bash
 DPredatorPreyTI.exe extension
-
+```
 Example: 
-
+```bash
 DPredatorPreyTI.exe pgm
-
+```
 Important: The encrypted .bin file and the .txt key must be in the same directory.
 
 ### Notes
