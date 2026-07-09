@@ -30,9 +30,9 @@ docs/
 The source code is located in `src/`:
 
 - `EPredatorPreyTI.c` — encrypts a file
-- 
+  
 - `DPredatorPreyTI.c` — decrypts a file
-- 
+  
 Compiled files such as .o and .exe are not included in the repository. They should be generated locally.
 
 ## Test files
