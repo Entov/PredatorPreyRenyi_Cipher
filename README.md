@@ -30,7 +30,6 @@ docs/
 
 - `EPredatorPreyTI` — encrypts a file
 - `DPredatorPreyTI` — decrypts a file
-- Source, object, and executable files are included (`.c`, `.o`, `.exe`)
 
 ## Test files
 
