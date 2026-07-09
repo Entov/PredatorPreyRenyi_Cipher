@@ -5,8 +5,8 @@ This repository contains a lightweight predator-prey based multimedia encryption
 
 ```text
 src/
-├── encrypt.c
-└── decrypt.c
+├── EPredatorPreyTI.c
+└── DPredatorPreyTI.c
 
 data/
 ├── samples/
@@ -28,8 +28,11 @@ docs/
 
 ## Programs
 The source code is located in `src/`:
+
 - `EPredatorPreyTI.c` — encrypts a file
+- 
 - `DPredatorPreyTI.c` — decrypts a file
+- 
 Compiled files such as .o and .exe are not included in the repository. They should be generated locally.
 
 ## Test files
@@ -52,7 +55,9 @@ A special visual case was used for .pgm images during the experiments, where the
 
 ## Usage
 First, compile the programs:
+
 gcc src/EPredatorPreyTI.c -o EPredatorPreyTI
+
 gcc src/DPredatorPreyTI.c -o DPredatorPreyTI
 
 ### Encryption
@@ -61,6 +66,7 @@ gcc src/DPredatorPreyTI.c -o DPredatorPreyTI
 EPredatorPreyTI.exe input_filename.extension
 ```
 Example:
+
 ```bash
 EPredatorPreyTI.exe barbara_binaria.pgm
 ```
@@ -72,26 +78,34 @@ If the decryption program, the encrypted .bin file and the .txt key are in the s
 DPredatorPreyTI.exe extension
 ```
 Example: 
+
 ```bash
 DPredatorPreyTI.exe pgm
 ```
 Important: The encrypted .bin file and the .txt key must be in the same directory.
-Experimental results
 
 ### Experimental results
 The repository includes selected experimental outputs in results/, including:
 
 - Correlation and histogram analysis.
+  
 - Differential attack experiments.
+  
 - Entropy analysis.
+  
 - Key sensitivity experiments.
+  
 - NIST SP 800-22 statistical test reports.
+  
 - Speed measurements.
 
 ### Notes
 - The program is designed to work with any file type because it processes files as binary data.
+  
 - Encryption and decryption are performed using the companion programs EPredatorPreyTI and DPredatorPreyTI.
+  
 - For most file types, the encrypted output cannot be opened directly because the original structure and headers are encrypted as well.
+  
 - PGM images were used as a visual test case to make encryption results easier to inspect.
 
 ## Visual overview
