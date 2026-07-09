@@ -77,14 +77,17 @@ EPredatorPreyTI.exe barbara_binaria.pgm
 ### Decryption
 
 If the decryption program, the encrypted .bin file and the .txt key are in the same directory, run:
+
 ```bash
 DPredatorPreyTI.exe extension
 ```
+
 Example: 
 
 ```bash
 DPredatorPreyTI.exe pgm
 ```
+
 Important: The encrypted .bin file and the .txt key must be in the same directory.
 
 ### Experimental results
