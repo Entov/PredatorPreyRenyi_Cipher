@@ -1,5 +1,31 @@
 ## Predator-Prey Rényi Encryption and Decryption
 This repository contains a lightweight predator-prey based multimedia encryption program that operates on **raw binary data**. Since the program reads files as binary streams, it can be used with **any file type**.
+
+## Repository structure
+
+```text
+src/
+├── encrypt.c
+└── decrypt.c
+
+data/
+├── samples/
+│   ├── images/
+│   └── video/
+└── metadata/
+
+results/
+├── correlation_histogram_15_rounds/
+├── differential_attack_15_rounds/
+├── entropy_15_rounds/
+├── key_sensitivity_15_rounds/
+├── nist_sp800_22/
+└── speed/
+
+docs/
+└── original_notes.md
+```
+
 ## Programs
 
 - `EPredatorPreyTI` — encrypts a file
