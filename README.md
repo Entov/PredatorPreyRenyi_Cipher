@@ -27,9 +27,9 @@ docs/
 ```
 
 ## Programs
-
-- `EPredatorPreyTI` — encrypts a file
-- `DPredatorPreyTI` — decrypts a file
+The source code is located in `src/`:
+- `EPredatorPreyTI.c` — encrypts a file
+- `DPredatorPreyTI.c` — decrypts a file
 
 ## Test files
 
