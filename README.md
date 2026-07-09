@@ -93,3 +93,12 @@ The repository includes selected experimental outputs in results/, including:
 - Encryption and decryption are performed using the companion programs EPredatorPreyTI and DPredatorPreyTI.
 - For most file types, the encrypted output cannot be opened directly because the original structure and headers are encrypted as well.
 - PGM images were used as a visual test case to make encryption results easier to inspect.
+
+## Visual overview
+
+### Key sensitivity example
+
+The following figure illustrates the effect of a minimal key modification. With the correct key, the image is recovered successfully; with a modified key (modifying the least significant bit of the first parameter of the key), the recovered output remains noise-like:
+<img width="1786" height="495" alt="Key_sensitivity15LSB1" src="https://github.com/user-attachments/assets/d0b35b64-9ec4-4ac4-b4a4-2ab8e021d864" />
+
+
