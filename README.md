@@ -30,21 +30,30 @@ docs/
 The source code is located in `src/`:
 - `EPredatorPreyTI.c` — encrypts a file
 - `DPredatorPreyTI.c` — decrypts a file
+Compiled files such as .o and .exe are not included in the repository. They should be generated locally.
 
 ## Test files
 
-Some test data are included in the repository.  
-The file `barbara_binaria.pgm` is intentionally included for test BUT users may provide their own test image or file c:
+Some test data are included in the repository under:
+
+data/samples/
+
+For example, binary PGM images are available in:
+
+data/samples/images/
+
+Users may also provide their own test image, video, or binary file.
 
 ## How it works
 
 The encryption program reads the entire input file in binary form and encrypts all of it. In general, this includes the file headers, so the encrypted file is not directly viewable or usable in its original format.
 
-A special visual case was used for `.pgm` images during the experiments, where the encrypted image can still be displayed as noise for analysis purposes.
+A special visual case was used for .pgm images during the experiments, where the encrypted image can still be displayed as noise for analysis purposes.
 
 ## Usage
-
-Open a terminal (or Command Prompt), move to the directory where the program is located, and run:
+First, compile the programs:
+gcc src/EPredatorPreyTI.c -o EPredatorPreyTI
+gcc src/DPredatorPreyTI.c -o DPredatorPreyTI
 
 ### Encryption
 
@@ -67,6 +76,17 @@ Example:
 DPredatorPreyTI.exe pgm
 ```
 Important: The encrypted .bin file and the .txt key must be in the same directory.
+Experimental results
+
+### Experimental results
+The repository includes selected experimental outputs in results/, including:
+
+- Correlation and histogram analysis.
+- Differential attack experiments.
+- Entropy analysis.
+- Key sensitivity experiments.
+- NIST SP 800-22 statistical test reports.
+- Speed measurements.
 
 ### Notes
 - The program is designed to work with any file type because it processes files as binary data.
