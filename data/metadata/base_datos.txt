@@ -1,5 +1,5 @@
 SOBRE LA BASE DE DATOS
-barbara es 256 x 256 
+barbara es 512 x 512 
 surf es 640 x 480
 baboon es 512 x 512
 bird es 321 x 481
