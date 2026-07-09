@@ -1,4 +1,5 @@
 ## Predator-Prey Rényi Encryption and Decryption
+
 This repository contains a lightweight predator-prey based multimedia encryption program that operates on **raw binary data**. Since the program reads files as binary streams, it can be used with **any file type**.
 
 ## Repository structure
@@ -27,6 +28,7 @@ docs/
 ```
 
 ## Programs
+
 The source code is located in `src/`:
 
 - `EPredatorPreyTI.c` — encrypts a file
@@ -54,6 +56,7 @@ The encryption program reads the entire input file in binary form and encrypts a
 A special visual case was used for .pgm images during the experiments, where the encrypted image can still be displayed as noise for analysis purposes.
 
 ## Usage
+
 First, compile the programs:
 
 gcc src/EPredatorPreyTI.c -o EPredatorPreyTI
@@ -85,6 +88,7 @@ DPredatorPreyTI.exe pgm
 Important: The encrypted .bin file and the .txt key must be in the same directory.
 
 ### Experimental results
+
 The repository includes selected experimental outputs in results/, including:
 
 - Correlation and histogram analysis.
@@ -100,6 +104,7 @@ The repository includes selected experimental outputs in results/, including:
 - Speed measurements.
 
 ### Notes
+
 - The program is designed to work with any file type because it processes files as binary data.
   
 - Encryption and decryption are performed using the companion programs EPredatorPreyTI and DPredatorPreyTI.
@@ -113,6 +118,7 @@ The repository includes selected experimental outputs in results/, including:
 ### Key sensitivity example
 
 The following figure illustrates the effect of a minimal key modification. With the correct key, the image is recovered successfully; with a modified key (modifying the least significant bit of the first parameter of the key), the recovered output remains noise-like:
+
 <img width="1786" height="495" alt="Key_sensitivity15LSB1" src="https://github.com/user-attachments/assets/d0b35b64-9ec4-4ac4-b4a4-2ab8e021d864" />
 
 
